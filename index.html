@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <link type="text/css" href="jquery/css/custom-theme/jquery-ui-1.8.23.custom.css" rel="stylesheet"/>
+  <link type="text/css" href="css/main.css" rel="stylesheet"/>
+  <script type="text/javascript" src="jquery/js/jquery-1.8.0.min.js"></script>
+  <script type="text/javascript" src="jquery/js/jquery-ui-1.8.23.custom.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+
+      // Tabs
+      //$('.tabs').tabs();
+      $('.tabs').tabs({
+          load: function(event, ui) {
+              $(ui.panel).delegate('a', 'click', function(event) {
+                  $(ui.panel).load(this.href);
+                  event.preventDefault();
+              });
+          }
+      });
+
+    });
+  </script>
+  <title>Semen Pinigin</title>
+</head>
+<body>
+<div class="header">
+  <div class="photo ui-widget-content ui-corner-all ui-corner-bottom ui-corner-right ui-corner-br"><img src="images/semasping.jpg" alt="Semen Pinigin"></div>
+  <div class="info_about ">
+    <ul class="info ui-widget-content ui-corner-all ui-corner-bottom ui-corner-right ui-corner-br">
+      <li class="fio info__item">Семен Пинигин</li>
+      <li class="year info__item"><span id="year">1983</span>г.</li>
+      <li class="old info__item" id="old"></li>
+      <li class="spec info__item">Web-Программист</li>
+    </ul>
+  </div>
+</div>
+<div class="content clear">
+  <div class="tabs">
+    <ul class="menu">
+      <li class="menu__item info_about"><a href="about.html">Общая информация</a></li>
+      <li class="menu__item experience"><a href="exp.html">Опыт работы</a></li>
+    </ul>
+  </div>
+</div>
+<div class="footer">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+  font-family: arial;
+}
+.photo {
+  float: left;
+  display: block;
+}
+
+.info_about {
+  display: block;
+}
+
+.info__item {
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+}
+
+div {
+  margin: 3px;
+}
+
+.about__list__item {
+  margin-bottom: 10px;
+}
+
+.question {
+  border-bottom: 2px dotted #666;
+}
+
+.answer {
+  display: none;
+}
