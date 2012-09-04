@@ -43,3 +43,16 @@ div {
 .hidden {
   display: none;
 }
+.print {
+  float: right;
+}
+
+@media print {
+  .answer {
+    display: block;
+    padding-left: 15px;
+  }
+  body {
+    font-size: 8pt;
+  }
+}
