@@ -1,12 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
   "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Общая информация</title>
   <script>
   	$(function() {
-  		$(".question").click(function(clk){
-      $(clk.toElement.nextElementSibling).toggle();
+  		$(".question").click(function(){
+        $(this).nextUntil('.about__list__item').toggle();
       });
   	});
   	</script>
@@ -31,7 +32,7 @@
     </div>
     <div class="about__list__item">
       <div class="question">Город, в котором живёте</div>
-      <div class="answer">город Мытищи, московской области </div>
+      <div class="answer">город Мытищи, Московской области </div>
     </div>
     <div class="about__list__item">
       <div class="question">Вуз, факультет, специальность, кафедра</div>
@@ -39,12 +40,12 @@
       специальность:  "Физика атомного ядра и частиц" на кафедре теоритической физики. Учился до 4 курса.</p>
       <p>Далее специальность "ВМКСС" на кафедре информационных технологий, со 2-го по 4-ый курс.</p>
         Затем обучение пришлось прекратить по семейными финансовым обстоятельствам.
-        На руках академическая справка.
+        На руках академическая справка.</p>
       </div>
     </div>
     <div class="about__list__item">
       <div class="question">Год окончания вуза</div>
-      <div class="answer">2007</div>ы
+      <div class="answer">2007</div>
     </div>
     <div class="about__list__item">
       <div class="question">На каком уровне владеете английским языком?</div>
