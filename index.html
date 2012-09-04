@@ -12,8 +12,18 @@
     $(function () {
 
       // Tabs
-      $('.tabs').tabs();
+      $('.tabs').tabs({ ajaxOptions: { async: false } });
     });
+    function printpage() {
+      $('.tabs').tabs('load', 1);
+      $('.tabs>div.ui-tabs-panel').removeClass('ui-tabs-hide');
+      $('.tabs').tabs('load', 2);
+      $('.tabs>div.ui-tabs-panel').removeClass('ui-tabs-hide');
+      window.print();
+      //$('.tabs>div.ui-tabs-panel').addClass('ui-tabs-hide');
+      $('.tabs').tabs('destroy');
+      $('.tabs').tabs();
+    }
   </script>
   <title>Semen Pinigin</title>
 </head>
@@ -28,7 +38,7 @@
       <li class="spec info__item">Web-Программист</li>
     </ul>
   </div>
-  <div class="print"><a href="#">Версия для печати в разработке</a></div>
+  <div class="print"><a href="#" onclick="printpage()">Версия для печати</a></div>
 </div>
 <div class="content clear">
   <div class="tabs">

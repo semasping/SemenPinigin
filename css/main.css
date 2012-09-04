@@ -39,7 +39,9 @@ div {
   display: none;
   padding-left: 15px;
 }
-
+.page_info{
+  display: none;
+}
 .hidden {
   display: none;
 }
@@ -54,5 +56,12 @@ div {
   }
   body {
     font-size: 8pt;
+  }
+  .page_info{
+    display: block;
+    font-weight: bolder;
+  }
+  .menu{
+    display: none;
   }
 }
