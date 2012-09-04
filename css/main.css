@@ -39,3 +39,7 @@ div {
   display: none;
   padding-left: 15px;
 }
+
+.hidden {
+  display: none;
+}

@@ -2,21 +2,41 @@
   "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Вопросы</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Технические Вопросы</title>
+  <script>
+    $(function () {
+      $(".question").click(function () {
+        $(this).nextUntil('.tech_question__list__item').toggle();
+      });
+    });
+  </script>
 </head>
 <body>
-<div><p>После прочтения информации о школе на Habrаhabr.ru, я зашел ознакомится с анкетой. Там было 4 части.
-  <ul>
-    <li>Общие вопросы</li>
-    <li>Опыт разработки</li>
-    <li>Блок задач</li>
-    <li>Задание (Сверстать страницу и разместить на github)</li>
-  </ul>
-  Но сейчас там нет 3-го блока с задачами. Ниже скрин с текущим отображением. Проверял в браузерах FireFox 14.0.1 и Google Chrome 21.0.1180.89 m.
-  </p>
-  <img src="images/1346784557-clip-33kb.png" alt="">
-  Поэтому эту часть задания выполнить не могу.
+<div class="tech_question__list">
+  <div class="tech_question__list__item">
+    <div class="question">Перечислите известные вам инструменты и приёмы для отладки кода в разных браузерах.</div>
+    <div class="answer">
+      <p>
+        Во всех браузерах: просмотр исходного кода.<br>
+        Для Google chrome: developer tools, различные расширения для css и js.<br>
+        Для FireFox: firbug, встроенные инспектор.<br>
+        для Internet Expolorer`a различных версий: IETester + debugBar<br>
+        Использование breakpoints, списка наблюдения (watch expression).
+      </p>
+    </div>
+    <div class="question">Опишите своими словами, что происходит в браузерах при клике на ссылку yandex.ru (полнота ответа – на ваше усмотрение). </div>
+    <div class="answer">
+      <p>
+      </p>
+    </div>
+    <div class="question">Предположим, что мы представляем автосалон по продаже японских и немецких автомобилей. У нас есть базовые классы и примеры их использования. Допишите недостающий код.</div>
+    <div class="answer">
+      <p>
+      </p>
+    </div>
+  </div>
 </div>
+
 </body>
 </html>
